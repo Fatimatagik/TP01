@@ -1,0 +1,66 @@
+/*
+Tuto css-tricks
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+.conteneur {
+    width: 1000px;
+    margin: 100px auto;
+    border: 1px solid;
+    padding: 20px;
+    display: flex; /* display: flex permet de mettre les éléments direct enfant sur la même ligne. */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*
+    justify-content (l'alignement des blocs)
+    - flex-start : depuis la gauche
+    - flex-end : depuis la droite
+    - space-around : espacement autour de tous les blocs
+    - space-between : un espacement uniquement entre les blocs (pas aux extrémités)
+    - space-evenly : un espacement de même taille partout (extrémités et entre les éléments)
+    - center : alignement au milieu, espacements sur les cotés
+
+    flex-wrap: wrap;
+    - Permet de dire à la valeur flex de respecter la taille des éléments, si les éléments sont plus long que la ligne, ils passent en dessous. Sinon flex met tous les éléments sur la même ligne en ne respectant pas leur taille originale.
+    */
+}
+.largeur-25 {
+    width: 25%;
+    height: 200px;
+}
+.largeur-25:first-child {
+    background-color: tomato;
+}
+.largeur-25:nth-child(2) {
+    background-color: plum;
+}
+.largeur-25:last-child {
+    background-color: indigo;
+}
+
+.largeur-45 {
+    width: 45%;
+    height: 200px;
+}
+
+.couleur1 { background-color: purple; }
+.couleur2 { background-color: salmon; }
+.couleur3 { background-color: slateblue; }
+.couleur4 { background-color: teal; }
+.couleur5 { background-color: peachpuff; }
+
+
+.alignement-vertical {
+    height: 700px;
+    align-items: flex-end;
+    /*
+    align-items :
+    -------------
+    center : au milieu en terme de hauteur
+    flex-start : commence en haut du bloc
+    flex-end : commence en bas du bloc
+    stretch : prend la hauteur complete, tous les éléments auront la même hauteur. Ne pas mettre de hauteur figée pour que le stretch s'applique !
+    */
+}
+.hauteur-350 { height: 350px; }
+.hauteur-400 { height: 400px; }

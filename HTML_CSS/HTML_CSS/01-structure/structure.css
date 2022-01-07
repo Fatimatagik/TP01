@@ -1,0 +1,45 @@
+/* Ceci est un commentaire css */
+/*
+pour appliquer de la mise en forme : on appelle l'élément concerné et on donne un ensemble de propriété avec leur valeur correspondante.
+*/
+
+body {
+    background-color: rgb(209, 207, 245); /* background-color : couleur de fond */
+    /*
+    Valeur possible pour les couleurs : 
+        - par son nom (red | green | blue ...)
+        - par son code hexadécimal : 6 caractères précédés d'un # (caractères disponible : les chiffres 0-9 et les lettres a-f) exemple : #54ef47
+        - par son code RGB : 3 chiffres entre 0 et 255 exemple : rgb(25, 57, 185)
+    */
+
+}
+
+header {
+    background-color: indigo;
+    color: white; /* couleur du texte */
+    height: 140px; /* la hauteur de l'élément */
+    text-align: center; /* alignement du texte sur la largeur */
+    padding-top: 30px;
+}
+
+nav {
+    background-color: darkorchid;
+    color: white; 
+    height: 30px; 
+    text-align: center; 
+    line-height: 30px; /* hauteur de ligne */
+}
+
+section {
+    background-color: white;
+    min-height: 500px; /* avec le min- : hauteur minimum (s'adapte au besoin) */
+    padding: 30px;
+}
+
+footer {
+    background-color: indigo;
+    color: white; 
+    height: 200px; 
+    text-align: center;
+    padding-top: 30px; 
+}

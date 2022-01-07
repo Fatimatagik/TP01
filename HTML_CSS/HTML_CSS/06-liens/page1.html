@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lien page 1</title>
+
+    <style>
+        /* il est possible d'écrire du css dans la balise <style> mais cette approche est déconseillée. Il faut toujours privilégier le fichier css extérieur pour bien organiser son code. */
+            h1 { 
+                background-color: indianred; 
+                color: white; 
+                padding: 20px; 
+                border-radius: 3px; /* border-radius : pour avoir des bords arrondis */ 
+            }
+    </style>
+
+</head>
+<body>
+    <h1>Page 1</h1>
+    <br>
+    <!-- Lien interne au projet -->
+    <a href="page2.html" title="cliquez sur le lien pour aller sur la page 2">Aller sur la page 2</a>
+
+    <br>
+    <!-- Lien extérieur au projet -->
+    <a href="http://www.google.fr" target="_blank">Aller sur google</a>
+
+    <!-- Lien téléchargement ou affichage si compatible dans une page web -->
+    <br>
+    <a href="document/cv.docx">Télécharger mon cv</a>
+    <br>
+    <a href="document/cv.pdf">Voir mon cv</a>
+
+    <!-- Lien sur une image -->
+    <br>
+    <a href="http://www.google.fr"><img src="etoile.png" alt="une étoile"></a>
+
+    <!-- Lien pour imprimer la page -->
+    <br>
+    <a href="" onclick="window.print()">Imprimer la page</a>
+
+</body>
+</html>

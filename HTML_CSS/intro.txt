@@ -1,0 +1,19 @@
+ROLES DES LANGAGES :
+--------------------
+
+FRONTEND : (exécuté par le navigateur)
+----------
+- HTML 5 : Hypertext Markup Language : Structure d'une page web (régions / blocs / médias ...)
+- CSS 3 : Cascading Style Sheet :  Mise en forme (couleurs / marges / bordures ...)
+- JS   : Javascript : animations, intéractivité (carousel, jeux ...)
+
+BACKEND : (côté serveur)
+---------
+- SQL  : Structured Query Language : MySQL Communication avec les BDD (questions, actions (création | modification | suppression))
+- PHP  : Php Hypertext Preprocessor : Fonctionnalités (formulaire (inscription, connexion, ajouter au panier ...)) (autres langages back : python, .NET, java)
+
+3 Façons de construire un site web :
+------------------------------------
+- From scratch : le développeur code tout le site à la main (liberté totale mais un temps de développement très long)
+- Framework : des outils avec du code déjà prêt (temps de dev plus rapide, mais on a les contraintes de l'outil)
+- CMS : Content Managing System (wordpress, drupal, magento, prestashop) : (très rapide, mais on a les contraintes de l'outil)

@@ -1,0 +1,26 @@
+faire un site de 3 pages :
+--------------------------
+Sujet : les outils web
+
+Contraintes :
+-------------
+- la structure des pages doit contenir :
+	- un haut de site contenant un logo du projet et un titre principal
+	- un menu permettant de passer d'une page à l'autre
+	- une zone de contenu principal (avec du texte, le logo du langage ou de l'outil et au minimum une image (voir beaucoup plus)
+	- un pied de page avec un Copyright et un mail de contact
+	
+Pages à créer :
+---------------
+- Page pour parler de l'outil photoshop
+	- section historique de photoshop
+	- section liens utiles
+	- section avec des images créées avec photoshop
+- Page pour parler du langage html
+	- section historique du langage
+	- section liens utiles
+	- section avec des images/videos de code html
+- Page pour parler du langage css
+	- section historique du langage
+	- section liens utiles
+	- section avec des images/videos de code css

@@ -1,0 +1,93 @@
+/**
+ *
+ * GENERALES
+ *
+ */
+
+* {
+    box-sizing: border-box; /* permet d'inclure les padding et les bordures dans les largeurs des éléments au lieu de les rajouter */
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    background-color: #333333;
+}
+.conteneur {
+    max-width: 1000px;
+    margin: 0 auto;   
+}
+header {
+    height: 140px;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.bloc_logo { width: 50%; padding: 20px; }
+.bloc_titre { width: 50%; padding: 20px; }
+nav {
+    background-color: lightslategray; 
+    display: flex;   
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 25px;
+}
+nav a:hover {
+    background-color: darkslateblue;
+}
+section {
+    /* height: 500px; */
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+section > div {
+    width: 50%;
+    min-height: 250px;
+    padding:  20px;
+}
+/*
+.div1 { background-color: salmon; }
+.div2 { background-color: violet; }
+.div3 { background-color: purple; }
+.div4 { background-color: darkorchid; }
+*/
+footer {
+    height: 100px;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/**
+ *
+ * INDEX
+ *
+ */
+
+
+
+/**
+ *
+ * CSS
+ *
+ */
+.div1 img {
+    width: 100%;
+}
+
+
+/**
+ *
+ * PHOTOSHOP
+ *
+ */ 

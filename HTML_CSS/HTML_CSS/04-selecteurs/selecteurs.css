@@ -1,0 +1,79 @@
+#conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+p {
+    font-weight: bold;
+    color: red;
+}
+p:nth-child(odd) {
+    /* tous les éléments p (odd : impair) */
+    color: rgb(36, 78, 9);
+}
+p:nth-child(even) {
+    /* tous les éléments p (even : pair) */
+    color: rgb(219, 111, 10);
+}
+p:first-child {
+    /* le ou les éléments p à condition qu'ils soient le premier enfant d'une structure html */
+    /* il est possible d'utiliser last-child pour l'équivalent sur le dernier enfant */
+    color: rgb(48, 91, 184);
+}
+
+.ma_classe {
+    /* il est possible d'appliquer du css sur plusieurs éléments via une classe. */
+    /* le !important permet de ne  pas dépendre du sens de lecture et des chemins css, la ligne  avec !important sera obligatoirement prioritaire sur tout le reste */
+    margin: 20px;
+    background-color: tomato;
+    color: white !important;
+    padding: 20px;
+}
+
+span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+div div span {
+    /* un span qui se trouve dans un div qui lui même se trouve dans un autre div */
+    color: red;
+}
+
+#mon_id span {
+    /* un span qui se trouve dans un élément ayant l'id id="mon_id" */
+    text-decoration: underline;
+}
+
+/*
+POUR SELECTIONNER DES ELEMENTS HTML VIA CSS
+-------------------------------------------
+* {} : caractère universel : toutes les balises sans exception
+par son nom de balise : p {} div {}  ...
+par son id : #conteneur {} #id1 {} ...
+par sa class : .ma_classe {} .truc {} ...
+par la relation parent enfant : div:first-child {} p:last-child {} span:nth-child(2) {} ...
+par son chemin : div span {} #conteneur div p {} ...
+
+---
+
+Différence entre un id et une class :
+- un id est fait pour être unique dans une page 
+- une class est faite pour être répétée autant de fois que nécessaire
+    - exemple : .padding-20 { padding: 20px; } .couleur_rouge { background-color: red; }
+
+Caractères autorisés pour les class et les id : les lettres a-z A-Z, les chiffres : 0-9 et underscore _ et tiret -
+⚠ une class ou un id ne peuvent commencer  par un chiffre et sont sensible à la casse (une majuscule est différente d'une minuscule)
+
+---
+
+EXEMPLES DE CHEMINS CSS
+-----------------------
+div p {} la ou les balises p qui se trouve dans un élément div (quelque soit le niveau)
+div > p {} la ou les balises p qui sont direct enfant d'un élément div (il ne faut pas d'élément intermédiaire)
+div, p, span, .ma_classe {} tous les divs, tous les p et tous les span (avec la virgule, tous les éléments sont concernés quelque soit leur position dans la page) 
+
+
+*/

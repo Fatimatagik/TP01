@@ -1,0 +1,57 @@
+body {
+    background-color: #dedede;
+    margin: 0; /* pour annuler les marges présentent par défaut sur la balise body */
+}
+
+#conteneur {
+    background-color: white;
+    padding: 30px; /* marge intérieure à l'élément */
+    width: 1000px; /* largeur de l'élément */
+    margin: 0 auto; /* permet de centrer le contenu au milieu de la page */
+
+    /*
+    margin : 10px; : 10px de marge sur tous les côté
+    margin: 10px 20px; : 10px en haut et en bas | 20px à gauche et à droite
+    margin: 5px 40px 10px 50px; : première valeur en haut et on suit le sens des aiguilles d'une montre : margin: haut droite bas gauche;
+    */
+}
+
+span { /* span : balise neutre pour impacter une partie de texte */
+    color: red;
+    font-weight: 600; /* bold | normal | une centaine entre 100 et 900 */
+    /* font-style: italic; */
+    /* text-decoration: line-through; */
+    font-size: 25px; /* taille de la police */
+}
+
+* { /* caractère * pour sélectionner toutes les balises sans exception ! */
+    /* font-family: arial; */
+    font-family: 'Roboto', sans-serif;
+}
+/*
+h1, h3 {
+    font-family: 'Playfair Display', serif;
+}
+*/
+
+/* appel d'une police depuis dafont https://www.dafont.com/fr/ adaptée pour le web avec le generateur de fontsquirrel : https://www.fontsquirrel.com/tools/webfont-generator */
+@font-face {
+    font-family: 'the_giant_and_the_mouseRg';
+    src: url('the_giant_and_the_mouse-webfont.woff2') format('woff2'),
+         url('the_giant_and_the_mouse-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h3 {
+    font-family: 'the_giant_and_the_mouseRg';
+}
+
+h1 {
+    font-size: 70px;
+}
+h3 {
+    font-size: 35px;
+    letter-spacing: 5px; /* espacement entre les lettres */
+}

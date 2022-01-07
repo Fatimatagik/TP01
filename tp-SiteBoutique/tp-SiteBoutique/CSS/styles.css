@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: url(../fond.png) no-repeat;
+    background-size: cover;
+    margin: auto 30px;
+}
+
+.d-flex{
+    display: flex;
+}
+header{
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+}
+
+.bloc-logo{
+    width: 40%;
+    /*border: 1px solid black;*/
+}
+
+.logo{
+    width: 15%;
+    height: auto;
+}
+
+.logo > img{
+    padding: 15px;
+    margin: 10px;
+    padding-top: 0;
+
+}
+.boutique{
+    flex-direction: column;
+}
+
+.boutique > h1{
+    font-style: italic;
+    font-size: 45px;
+    margin: 0;
+    padding-bottom: 2px;
+}
+
+.boutique > span{
+    color: deeppink;
+    font-style: italic;
+}
+
+.bloc-aide{
+    flex-direction: column;
+    width: 30%;
+    /*border: 1px solid black;*/
+}
+
+.bloc-aide > span{
+    color: deepskyblue;
+    font-size: 25px;
+}
+
+#jour{
+    color: dimgray;
+    font-style: italic;
+    font-size: initial;
+}
+
+.telephone{
+    background: url(../aide.png)no-repeat;
+    background-size: cover;
+    line-height: 23px;
+    color: DeepSkyBlue;
+    width: 200px;
+    height: 25px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.numero{
+    width: 100%;
+}
+
+.panier{
+    flex-direction: row;
+    border-top: white 1px solid;
+}
+
+.panier span{
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    word-spacing: 2px;
+}
+
+.article{
+    flex-direction: row;
+}
+
+.article > img{
+    width: 40px;
+}
+
+.bloc-compte{
+    flex-direction: column;
+    width: 30%;
+    /*border: 1px solid black;*/
+    background-color: deepskyblue;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bloc-compte  span:first-child{
+    display :inline-block;
+    padding : 2px;
+    text-align:center;
+}
+
+
+
+
+
+nav{
+    justify-content:space-around;
+    width: 100%;
+    background-color: deepskyblue;
+    padding-bottom: 10px;
+    
+}
+
+ul{
+    width: 100%;
+}
+li{
+    display: inline-block;
+    margin: 0 40px;
+    padding: 0 20px;
+}
+
+
+/*#acceuil{
+    background-color: deeppink;
+
+
+}*/
+
+li a{
+    display: block;
+    width: 110px;
+    color: white;
+}
+
+li a:hover{
+    background-color: deeppink;
+}
+
+
+.bandeau{
+    justify-content: center;
+    width: 100%;
+
+}
+.sect-band{
+    background-color: white;
+}
+
+.paiement{
+    width: 25%;
+    /*border: 1px solid black;*/
+    background-color: white;
+}
+
+.ma-boutique{
+    width: 55%;
+    /*border: 1px solid black;*/
+    background-color: white;
+}
+
+.services{
+    width: 20%;
+    /*border: 1px solid black;*/
+    background-color: white;
+
+}
+
+.pad-left{
+    padding-left: 20px;
+}
+.b-services{
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px solid black
+    ;
+}
+
+.bon-plan, .chaussure, .object{
+    width: 30%;
+    /*border: 1px  solid;*/
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.65);
+    -moz-box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.65);
+}
+
+.bon-plan h2, .chaussure h2, .object h2{
+    background-color: lightgray;
+    border-bottom: 1px solid;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.lien{
+    justify-content: end;
+}
+
+.object{
+    /*border: black 1px solid;*/
+    background-color: white;
+    margin-left: 20px;
+    
+}
+.chaussure{
+    /*border: solid 1px black;*/
+    background-color: white;
+    margin-left: 20px;
+
+}
+.bon-plan{
+    /*border: 1px solid;*/
+    background-color: white;
+    margin-left: 20px;
+    
+}
+
+
+
+
+.second-section h2{
+    color: deepskyblue;
+    background-color: white;
+}
+
+
+
+
+.last-sect{
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    padding-right: 25px;
+}
+
+
+.bandeau img{
+    width: 100%;
+    max-height:100%;
+}
+
+footer{
+    justify-content: center;
+    word-spacing: 5px;
+    background-color: deepskyblue;
+    color: white;
+}

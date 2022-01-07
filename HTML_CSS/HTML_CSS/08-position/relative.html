@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        .conteneur {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 20px;
+        }
+
+        .carre {
+            margin: 100px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            transition: 1s ease;
+            left: 0;
+            border-radius: 0;
+        }
+
+        .bleu {
+            background-color: blue;
+        }
+
+        .rouge {
+            background-color: red;
+        }
+
+        .conteneur:hover .bleu {
+            left: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Position relative : relative à son emplacement initial. Ne change rien par défaut mais nous permet de déplacer l'élément 
+    -->
+    <div class="conteneur">
+        <div class="carre bleu"></div>
+        <div class="carre rouge" id="rouge"></div>
+    </div>
+
+
+    <script>
+        document.getElementById('rouge').onclick = function () {
+            document.getElementById('rouge').style.left = '100px';
+            document.getElementById('rouge').style.borderRadius = '50%';
+        }
+    </script>
+</body>
+
+</html>

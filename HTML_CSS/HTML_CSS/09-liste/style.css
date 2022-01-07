@@ -1,0 +1,63 @@
+#deuxieme_liste {
+    padding: 0;
+    list-style: none; /* le choix des puces de la liste, none pour ne pas en avoir. */
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    width: 200px;
+}
+#deuxieme_liste li {
+    padding: 7px;
+    border-bottom: 1px solid #c0c0c0;
+}
+#deuxieme_liste li:hover {
+    color: white;
+    background-color: darkslateblue;
+} 
+#deuxieme_liste li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+#deuxieme_liste li:last-child {
+    border: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+#troisieme_liste {
+    list-style: hiragana;
+}
+#troisieme_liste > li > ul {
+    list-style: katakana;
+}
+/* #troisieme_liste > li > ul > li > ul { */
+#troisieme_liste > li > ul ul{
+    list-style: upper-roman;
+}
+
+#menu {
+    list-style: none;
+    position: relative;
+    display: flex;
+    padding: 0;
+}
+#menu a {
+    color: white;
+    padding: 10px 25px;
+    display: block;
+    text-decoration: none;
+}
+#menu a:hover {
+    background-color: deeppink;
+}
+#menu .sous-menu {
+    padding: 0;
+    list-style: none;
+    background-color: rgb(125, 121, 151);
+    display: none;
+}
+#menu li:hover .sous-menu {
+    display: block;
+    position: absolute;
+}
+#menu > li {
+    background-color: darkslateblue;
+    position: relative;
+}

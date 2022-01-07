@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        video { width: 700px; }
+    </style>
+</head>
+<body>
+    <h1>Affichage d'une vidéo locale</h1>
+    <hr>
+    <!-- 
+        preload : pre chargement de la vidéo
+        controls : pour avoir les controles
+        loop : pour répéter la vidéo
+        autoplay : pour lancement automatique au chargement de la page (chrome bloque les autoplay)
+        poster : permet d'afficher une image avant le lancement de la vidéo
+
+        Le lecteur dépend du navigateur
+    -->
+    <video preload controls loop autoplay poster="https://cdn.pixabay.com/photo/2014/11/01/18/46/dubrovnik-512798_960_720.jpg">
+        <source src="Dubrovnik - 12866.mp4">
+    </video>
+</body>
+</html>

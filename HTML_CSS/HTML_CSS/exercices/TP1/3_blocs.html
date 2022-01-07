@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { box-sizing: border-box; }
+        .conteneur {
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px  solid;
+            justify-content: space-around;
+            padding:  20px;
+        }
+        .left, .right, .center {
+            width: 30%;
+
+            border: 1px  solid;
+            border-radius: 10px;
+        }
+        .left h3, .right h3, .center h3 {
+            background-color: lightgray;
+            border-bottom: 1px solid;
+            margin: 0;
+            border-radius: 10px 10px 0 0;
+            padding: 5px;
+            text-align: center;
+        }
+        .image_text {
+            padding: 10px;
+            display: flex;
+        }
+        .image_text span:first-child {
+            height: initial;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .image_text img {
+            width: 70px;
+        }
+        .image_text img.premiere  {
+            width: 50px;
+        }
+
+        .pleine-largeur {
+            width:  100%;
+            padding: 20px;
+        }
+        .telephone {
+            background: url('aide.png') no-repeat;
+            line-height: 23px;
+            color: DeepSkyBlue;
+            width: 200px;
+            height: 25px;
+            font-weight: bold;
+            padding-left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <div class="pleine-largeur">
+            <p class="telephone">01.02.03.04.05</p>
+        </div>
+
+        <div class="left">
+            <h3>Bloc 1</h3>
+            <div class="image_text">
+                <span>
+                    <img src="robe.png" class="premiere">
+                </span>
+                
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eos laboriosam. Fugiat aliquid officia commodi velit ipsam, possimus assumenda, ad voluptatibus eius reiciendis.
+                </span>
+            </div>            
+        </div>
+        <div class="center">
+            <h3>Bloc 2</h3>
+            <div class="image_text">
+                <span>
+                    <img src="talons.png">
+                </span>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eos laboriosam. Fugiat aliquid officia commodi velit ipsam, possimus assumenda, ad voluptatibus eius reiciendis.
+                </span>
+            </div>
+        </div>
+        <div class="right">
+            <h3>Bloc 3</h3>
+            <div class="image_text">
+                <span>
+                    <img src="chemise.png">
+                </span>
+                <span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, eos laboriosam. Fugiat aliquid officia commodi velit ipsam, possimus assumenda, ad voluptatibus eius reiciendis.
+                </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

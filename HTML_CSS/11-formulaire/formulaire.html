@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; }
+        img { max-width: 100%; }
+        .conteneur {
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #c0c0c0;
+            padding: 20px;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #c0c0c0;
+        }
+        input, select {
+            height: 30px;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #c0c0c0;
+        }
+        .radio {
+            width: initial;
+            margin-bottom: 0;
+        }
+        textarea {
+            resize: vertical; /* vertical | horizontal | none*/
+        }
+    </style>
+</head>
+<body>
+    <div class="conteneur">
+        <!-- 
+            Attributs de la balise form :
+            ----------------------------
+            method="" : quelle methode sera utilisée pour transmettre les données du form (get | post)
+            action="" : l'url cible lors de la validation du form
+            enctype="multipart/form-data" : obligatoire si le form a un champ de chargement de fichier (input type="file")
+
+            Attributs des champs du form :
+            ------------------------------
+            for="" : pour la balise label permet de faire le lien entre le label et le champ (se réfère à un champ ayant un id="" similaire au for="")
+            type="" : uniquement sur les balise input permet de dire à quoi sert ce champ
+                - text : champ de saisie texte
+                - email : vérifie le format du mail
+                - password : cache la saisie par des puces
+                - file : chargement de fichier
+                - submit : bouton de validation du form
+                - radio : case à cocher : un seul choix possible
+                - checkbox : case à cocher : plusieurs choix possibles
+                - reset : annule les saisies utilisateur
+            name="" : représente le nom du champ lorsque l'on récupère la saisie
+            value="" : représnete une valeur par défaut du champ et sur un type="submit" représente le texte du bouton.
+            required : rend un champ obligatoire
+            placeholder="" : un texte indicatif dans le champ
+            maxlength="" : permet de limiter le nombre de caractères saisis
+            multiple : pour un type="file" permet de charger plusieurs fichiers
+
+            disabled : champ désactivé, permet de montrer une information  mais à la validation du form on ne récupère pas l'info
+            readonly : champ uniquement en lecture, on ne peut pas changer la valeur, à la validation du form on récupère l'info
+
+         -->
+        <form method="post" action="" enctype="multipart/form-data">
+            <label for="pseudo">Pseudo*</label><br>
+            <input type="text" id="pseudo" name="pseudo" required>
+
+            <label for="mdp">Mot de passe</label><br>
+            <input type="password" id="mdp" name="mdp">
+
+            <label for="prenom">Prénom</label><br>
+            <input type="text" id="prenom" name="prenom" placeholder="Veuillez saisir votre prénom ...">
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email">
+
+            <label for="cv">CV</label><br>
+            <input type="file" id="cv" name="cv">
+
+            <label for="pays">Pays</label><br>
+            <select name="pays" id="pays">
+                <option>France</option>
+                <option>Italie</option>
+                <option>Espagne</option>
+                <option>Belgique</option>
+                <option>Portugal</option>
+            </select> 
+
+            <label for="sexe">Sexe</label><br>
+            <input type="radio" name="sexe" class="radio">Homme
+            <input type="radio" name="sexe" class="radio">Femme
+            <br><br>
+
+            <label for="fruits">Fruits préférés</label><br>
+            <input type="checkbox" name="fruits" class="radio">Fraises
+            <input type="checkbox" name="fruits" class="radio">Pommes
+            <input type="checkbox" name="fruits" class="radio">Poires
+            <input type="checkbox" name="fruits" class="radio">Kiwis
+            <br><br>
+
+            <label for="cp">Code postal</label><br>
+            <input type="text" id="cp" name="cp" maxlength="5">
+
+            <label for="adresse">Adresse</label>
+            <textarea name="adresse" id="adresse" rows="5"></textarea>
+
+            <!-- Pour les champs suivants : attention à la compatibilité navigateur -->
+            <label for="date_naissance">Date de naissance</label>
+            <input type="date" name="date_naissance" id="date_naissance">
+
+            <label for="jauge">Jauge</label>
+            <input type="range" id="jauge" name="jauge">
+
+            <label for="couleur">Couleur</label>
+            <input type="color" id="couleur" name="couleur">            
+
+            <!-- Autre -->
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar" multiple>
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" value="Un nom" disabled>
+
+            <label for="nom2">Nom2</label>
+            <input type="text" id="nom2" name="nom2" value="Un nom2" readonly>
+
+            <input type="hidden" name="cache" id="cache" value="123">
+
+            <hr>
+            <input type="reset" name="annuler" value="Annuler">
+            <input type="submit" name="valider" value="Valider">
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position fixed</title>
+    <style>
+        * { font-family: sans-serif; box-sizing: border-box;}
+        .conteneur {
+            padding:  20px;
+            padding-top: 50px; /* on rajoute un padding top plus important pour décaler du fait du menu fixed */
+            width: calc(100% - 250px);
+            margin-left: 250px;
+        }
+        body {
+            margin: 0;
+        }
+        nav {
+            background-color: black;
+            display: flex;
+            position: fixed; /* permet de positionner un élément indépendemment du reste */
+            top: 0; /* ou bottom */
+            left: 0; /* ou right */
+            width: 100%; /* en fixed, un élément bloc perd sa largeur à 100% naturelle, il faut préciser sa largeur. */
+        }
+        nav a {
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: royalblue;
+        }
+        .barre-laterale {
+            position: fixed;
+            width: 250px;
+            border-right: 1px solid #333333;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            padding-top: 100px;
+            height: 100vh;  /* 100vh = 100% de la hauteur du matériel | vh pour view height | vw pour view width */
+            background-color: royalblue;
+        }
+        .barre-laterale a {
+            color:  white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="barre-laterale">
+        <a href="#qui_suis_je">Qui suis je ?</a><br><br>
+        <a href="#competences">Mes compétences</a><br><br>
+        <a href="#realisations">Mes réalisations</a><br><br>
+        <a href="#contacter">Me contacter</a><br><br>
+    </div>
+    <div class="conteneur">
+        <nav>
+            <a href="#qui_suis_je">Qui suis je ?</a>
+            <a href="#competences">Mes compétences</a>
+            <a href="#realisations">Mes réalisations</a>
+            <a href="#contacter">Me contacter</a>
+        </nav>
+        <h2 id="qui_suis_je">Qui suis je ?</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <h2 id="competences">Mes compétences</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <h2 id="realisations">Mes réalisations</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <h2 id="contacter">Me contacter</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cupiditate. Eligendi iusto aspernatur at libero culpa voluptatum rerum, recusandae reprehenderit consequuntur doloremque quidem. Perferendis quidem delectus assumenda in corrupti optio!
+            Quaerat nisi adipisci beatae, architecto praesentium molestias, modi id est impedit reiciendis quo velit sed aspernatur magnam deserunt fugit error exercitationem cupiditate! Cupiditate ipsa cumque, maiores beatae perspiciatis atque quibusdam.
+            Amet molestiae sequi, alias necessitatibus ad beatae id nostrum minima nesciunt commodi accusamus blanditiis, consectetur voluptatibus culpa delectus facere inventore in omnis, asperiores velit ab similique repudiandae dolorum eius! Provident!
+            Amet tempora aliquid laudantium delectus quibusdam quis maxime quod nobis a praesentium asperiores dignissimos veritatis doloribus ducimus ut consectetur obcaecati, officia rerum iusto vero inventore eveniet saepe labore. Animi, voluptas?
+        </p>
+    </div>
+</body>
+</html>

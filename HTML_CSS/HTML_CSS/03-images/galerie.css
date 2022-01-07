@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #333333;
+}
+
+#conteneur {
+    width: 1000px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+}
+img {
+    width: 455px;
+    margin: 20px;
+    transition: all 1s ease; /* effet lors d'un changement de propriété css sur l'élément (voir en dessous avec les :hover) */
+}
+
+img:hover { /* hover : "pseudo classe" représente le fait de survoler l'élément avec la souris */
+    transform: rotate(-10deg); /* rotation de 10 degrés */
+}
+
+#rotation360:hover {
+    transform: rotate(-360deg);
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 20px;
+}
+

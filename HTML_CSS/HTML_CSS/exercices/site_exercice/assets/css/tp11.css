@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+.conteneur {
+    max-width: 1000px;
+    margin: 0 auto;   
+}
+header {
+    height: 140px;
+    background-color: indigo;
+}
+nav {
+    height: 30px;
+    background-color: tomato;
+}
+section {
+    /* height: 500px; */
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+section > div {
+    width: 50%;
+    height: 250px;
+}
+.div1 { background-color: salmon; }
+.div2 { background-color: violet; }
+.div3 { background-color: purple; }
+.div4 { background-color: darkorchid; }
+
+footer {
+    height: 100px;
+    background-color: red;    
+}
