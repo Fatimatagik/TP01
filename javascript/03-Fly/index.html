@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fly</title>
+    </head>
+    <body>
+    <script type="text/javascript">
+        document.write(
+        '<h1 id="titre"> COCKPIT <span id="js">JS</span> ✈️ </h1>'
+        );
+
+        let titre = document.getElementById("titre");
+        titre.style.backgroundColor = "black";
+        titre.style.color = "white";
+        document.getElementById("js").style.color = "yellow";
+        titre.style.textAlign = "center";
+
+        let i = 0;
+        while (i <= 10) {
+        if (i == 5) {
+            document.write(
+            "<span id='piste'>Piste idéale " + i + "</span><br> <hr>"
+            );
+        } else {
+            document.write("Piste " + i + "<br><hr>");
+        }
+        i++;
+        }
+        document.getElementById('piste').style.color = 'red';
+
+/*
+
+    let i = 0;
+    document.write('<header style=\'background-color:black;text-align:center;\' ><h1 style=\'color:white;\'> COCKPIT <span style=\'color:yellow;\'> JS </span>  🛩</h1></header>'); 
+
+  while(i <= 10)
+  {
+    if(i === 5)
+    {
+      document.write('<span style=\'color:red;\' > Piste idéal ' + i + '</span><br>')
+      document.write('<hr>');
+    }
+    else{
+      document.write('Piste ' + i + '<br>')
+      document.write('<hr>');
+    }
+    i++
+  }/*
+
+
+
+
+    </script>
+    </body>
+</html>
+*/

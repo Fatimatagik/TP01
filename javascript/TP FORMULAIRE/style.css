@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 30px;
+    background-color: cornsilk;
+
+}
+
+
+#conteneur{
+    width: 50%;
+    
+}
+
+input{
+    width: 70%;
+}

@@ -125,30 +125,30 @@ nav{
     justify-content:space-around;
     width: 100%;
     background-color: deepskyblue;
-    padding-bottom: 10px;
     
 }
 
 ul{
     width: 100%;
+    margin: 0;
+    padding: 0%;
 }
 li{
     display: inline-block;
-    margin: 0 40px;
-    padding: 0 20px;
+
 }
 
 
-/*#acceuil{
+.accueil{
     background-color: deeppink;
 
 
-}*/
+}
 
 li a{
     display: block;
-    width: 110px;
     color: white;
+    padding: 10px 25px;
 }
 
 li a:hover{

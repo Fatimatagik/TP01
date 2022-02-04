@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    align-items: center;
+}
+
+
+
+button{
+    border: black 1 px solid;
+    background-color: cadetblue;
+    height: 100px;
+    width: 200px;
+}
+
+
+bloc{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.bloc-fonce{
+    border: black 1px solid;
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+}
+
+.bloc-claire{
+    border: black 1px solid;
+    background-color: cyan;
+    height: 100px;
+    width: 200px;
+}

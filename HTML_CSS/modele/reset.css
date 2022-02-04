@@ -1,0 +1,10 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0; /* on annule les marges */
+    padding: 0; /* on annule les marges intérieures */
+    border: 0; /* on annule les bordures */
+    color: black; /* on annule les couleurs de texte */
+    text-decoration: none; /* on annule les décorations de texte */
+    font-size: 100%; /* on applique la même taille de police */
+    font: inherit; /* on garde la même police pour tous les éléments */
+    vertical-align: baseline; /* l'alignement de texte sur la base de la ligne */
+}

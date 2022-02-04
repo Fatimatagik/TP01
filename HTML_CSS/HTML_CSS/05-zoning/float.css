@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+.conteneur {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid; 
+    min-height: 500px;
+}
+.A, .B, .C {
+    border: 1px solid; 
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+    float: left; /* left | right | none */
+}
+
+/* donner au div .D une largeur de 420px et hauteur de 140px afin qu'il se trouve juste en dessous des 3 autres. */
+.D {
+    border: 1px solid; 
+    width: 420px;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+}
+
+.clear {
+    clear: both; /* left | right | both */
+}
+
+/*
+    La propriété float permet de mettre des éléments bloc sur une même ligne.
+    Pour fonctionner correctement, tous les éléments de la ligne doivent avoir le float.
+    
+    Le float sort les éléments du flux html et peut créer des incohérences dans la structure.
+    Pour ne pas avoir d'incohérences, il faut toujours casser le float juste après les éléments concernés.
+    ⚠ L'élément html qui appelle la propriété clear doit bien  être au même niveau que les éléments en float.
+
+    clear: both; permet d'annuler le float et de revenir au comportement naturel.
+*/

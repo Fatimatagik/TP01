@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    text-align: justify;
+    font-family: sans-serif;
+    font-size:16px;
+}
+p {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 2em; /* em relatif à la font-size de l'élément parent (ici le body) */
+}
+img {
+    max-width: 100%;
+}
+.conteneur {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+header {
+    height: 140px;
+    background-color: darkred;
+}
+nav {
+    height: 30px;
+    background-color: tomato;
+}
+section {
+    min-height: 540px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > div {
+    width: 50%;
+    min-height: 250px;
+    padding: 1.3em;    
+}
+/*
+.bloc1 { background-color: darkslategrey; }
+.bloc2 { background-color:deepskyblue; }
+.bloc3 { background-color:dodgerblue; }
+.bloc4 { background-color:firebrick; }
+*/
+
+footer {
+    height: 100px;
+    background-color: darkslateblue;
+}
+
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.contenu > div {
+    width: 25%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+/* Media query afin de passer les div dans la section en 100% largeur max : 768px */
+/* Pour les tailles d'écran inférieures à 768px on réarrange les éléments */
+@media screen and (max-width: 768px) {
+    section > div {
+        width: 100%;
+    }
+    section {
+        padding: 20px;
+    }
+    .contenu > div {
+        width: 50%;
+    }
+}
+/* Pour les tailles d'écran inférieures à 576px on réarrange les éléments */
+@media (max-width: 576px) {
+    section {
+        padding: 0;
+    }    
+    .contenu > div {
+        width: 100%;
+    }
+    .contenu {
+        padding: 0;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    section > div {
+        padding: .8em;    
+    }
+}
+
+
+/* Pour les tailles d'écran supérieures à 1200px on grossit le conteneur et la taille de police générale */
+@media (min-width: 1200px) {
+    .conteneur {
+        max-width: 1140px;
+    }
+    body {
+        font-size: 18px;
+    }
+}
+/* Pour les tailles d'écran supérieures à 1400px on grossit le conteneur et la taille de police générale */
+@media (min-width: 1400px) {
+    .conteneur {
+        max-width: 1320px;
+    }
+    body {
+        font-size: 20px;
+    }
+}
+
+
+
+

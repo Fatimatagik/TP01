@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    text-align: justify;
+}
+p {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+.conteneur {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid;
+}
+header {
+    height: 140px;
+    background-color: darkred;
+}
+nav {
+    height: 30px;
+    background-color: tomato;
+}
+section {
+    min-height: 540px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > div {
+    width: 50%;
+    min-height: 250px;
+    padding: 20px;    
+}
+/*
+.bloc1 { background-color: darkslategrey; }
+.bloc2 { background-color:deepskyblue; }
+.bloc3 { background-color:dodgerblue; }
+.bloc4 { background-color:firebrick; }
+*/
+
+footer {
+    height: 100px;
+    background-color: darkslateblue;
+}
+
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.contenu > div {
+    width: 25%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+/* Media query afin de passer les div dans la section en 100% largeur max : 768px */
+
+@media screen and (max-width: 768px) {
+    section > div {
+        width: 100%;
+    }
+    section {
+        padding: 20px;
+    }
+    .contenu > div {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 0;
+    }
+    .contenu > div {
+        width: 100%;
+    }
+    .contenu {
+        padding: 0;
+    }
+}
+
+
